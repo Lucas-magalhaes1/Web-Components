@@ -1,0 +1,83 @@
+body {
+  transition: background-color 0.5s;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.dark-theme {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+theme-switcher {
+  text-align: center;
+  position: relative;
+}
+
+form {
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.5s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.left-arrow, .right-arrow {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: background-color 0.3s;
+}
+
+.left-arrow:hover, .right-arrow:hover {
+  background-color: #0056b3;
+}
